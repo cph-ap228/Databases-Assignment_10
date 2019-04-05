@@ -10,7 +10,9 @@ WHERE
     ST_Contains(udsatte_byomraader.wkb_geometry, parkregister.wkb_geometry);
 ```
 Result: ```44```
---------
+
+---
+
 * **How many trees are located in exposed areas?**
 ```sql
 SELECT 
@@ -21,3 +23,6 @@ WHERE
     ST_Contains(udsatte_byomraader.wkb_geometry, gadetraer.wkb_geometry);
 ```
 Result: ```4866```
+
+## Exercise 2
+* **How many bike racks are placed along routes for heavy traffic?**
